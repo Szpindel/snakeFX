@@ -8,5 +8,6 @@ Try to create a 'snake' that grows when collecting 'items'
 
 isolate variables / get rid of hardcoding
 use interface
-we need a player object! have a player class that extends Item. make the controller smaller,
-everything has to be in the player class
+we neefd a player object! have a player class that extends Item. make the controller smaller,
+dsdsffeverything has to be in the player class
+z
