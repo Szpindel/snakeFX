@@ -1,0 +1,13 @@
+Tasks: Reorganize the game logic
+
+Create an object oriented solution for the player (a player/snake class)
+all objects in the game must implement the gameobject interface
+use polymorphism in the update method
+
+Try to create a 'snake' that grows when collecting 'items'
+
+isolate variables / get rid of hardcoding
+use interface
+we neefd a player object! have a player class that extends Item. make the controller smaller,
+dsdsffeverything has to be in the player class
+z
