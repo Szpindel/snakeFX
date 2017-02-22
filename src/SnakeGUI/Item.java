@@ -1,11 +1,12 @@
 package SnakeGUI;
 
+import SnakeLogic.GameObject;
 import javafx.scene.paint.Color;
 
 /**
  * Created by Ebbe Vang on 19-01-2017.
  */
-public class Item {
+public class Item implements GameObject{
     private Color Color;
     private int x;
     private int y;
@@ -26,5 +27,20 @@ public class Item {
 
     public int getY() {
         return y;
+    }
+
+    @Override
+    public void update() {
+
+    }
+
+    @Override
+    public void getRandomPosition(Controller controller) {
+
+    }
+
+    @Override
+    public void draw(Controller controller) {
+
     }
 }
