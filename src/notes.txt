@@ -11,3 +11,8 @@ use interface
 we neefd a player object! have a player class that extends Item. make the controller smaller,
 dsdsffeverything has to be in the player class
 z
+
+---
+
+
+delete empty methods from Controller
