@@ -1,7 +1,6 @@
 package SnakeGUI;
 
 import SnakeLogic.GameObject;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
 import java.util.Random;
@@ -11,8 +10,8 @@ import java.util.Random;
  */
 public class Player implements GameObject {
 
-    private int X;
-    private int Y;
+    private int x;
+    private int y;
     Random random = new Random();
 
     @Override
@@ -25,28 +24,28 @@ public class Player implements GameObject {
         // draw 'player'
 
         controller.g.setFill(Color.BLACK);
-        controller.g.fillRoundRect(this.X * controller.getFieldWidth(), this.Y * controller.getFieldHeight(), controller.getFieldWidth(), controller.getFieldHeight(), 3, 3);
+        controller.g.fillRoundRect(this.x * controller.getFieldWidth(), this.y * controller.getFieldHeight(), controller.getFieldWidth(), controller.getFieldHeight(), 3, 3);
     }
 
     @Override
     public void getRandomPosition(Controller controller) {
-        this.X = random.nextInt(controller.getWidth());
-        this.Y = random.nextInt(controller.getHeight());
+        this.x = random.nextInt(controller.getWidth());
+        this.y = random.nextInt(controller.getHeight());
     }
 
     public void moveDown() {
-        this.Y++;
+        this.y++;
     }
 
     public void moveLeft() {
-        this.X--;
+        this.x--;
     }
 
     public void moveRight() {
-        this.X++;
+        this.x++;
     }
 
     public void moveUp() {
-        this.Y--;
+        this.y--;
     }
 }
